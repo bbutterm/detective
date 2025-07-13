@@ -1,0 +1,10 @@
+[
+  {"id": 1, "exhibit": "Золотая маска Тутанхамона", "section": "Древний Египет", "discovered": "12:15", "value": "5000000"},
+  {"id": 2, "exhibit": "Серебряный кубок", "section": "Средневековье", "discovered": "12:20", "value": "150000"},
+  {"id": 3, "exhibit": "Бронзовая статуя", "section": "Древний Египет", "discovered": "12:25", "value": "800000"},
+  {"id": 4, "exhibit": "Картина Леонардо", "section": "Ренессанс", "discovered": "12:30", "value": "10000000"},
+  {"id": 5, "exhibit": "Древняя монета", "section": "Древний Египет", "discovered": "12:35", "value": "50000"},
+  {"id": 6, "exhibit": "Рыцарский меч", "section": "Средневековье", "discovered": "12:40", "value": "300000"},
+  {"id": 7, "exhibit": "Мраморная ваза", "section": "Ренессанс", "discovered": "12:45", "value": "750000"},
+  {"id": 8, "exhibit": "Папирус", "section": "Древний Египет", "discovered": "12:50", "value": "200000"}
+] 
