@@ -1,0 +1,17 @@
+[
+  {"id": 1, "name": "Иван Петров", "age": 35, "profession": "Учитель", "time_in": "09:15", "time_out": "11:45", "section": "Древний Египет", "ticket_type": "Взрослый"},
+  {"id": 2, "name": "Мария Сидорова", "age": 28, "profession": "Врач", "time_in": "09:30", "time_out": "12:15", "section": "Средневековье", "ticket_type": "Взрослый"},
+  {"id": 3, "name": "Анна Белова", "age": 42, "profession": "Искусствовед", "time_in": "10:00", "time_out": "14:30", "section": "Ренессанс", "ticket_type": "Льготный"},
+  {"id": 4, "name": "Сергей Козлов", "age": 19, "profession": "Студент", "time_in": "10:15", "time_out": "13:00", "section": "Современное искусство", "ticket_type": "Студенческий"},
+  {"id": 5, "name": "Елена Морозова", "age": 55, "profession": "Пенсионер", "time_in": "10:30", "time_out": "12:45", "section": "Древний Египет", "ticket_type": "Льготный"},
+  {"id": 6, "name": "Дмитрий Волков", "age": 31, "profession": "Программист", "time_in": "11:00", "time_out": "15:20", "section": "Средневековье", "ticket_type": "Взрослый"},
+  {"id": 7, "name": "Ольга Лебедева", "age": 26, "profession": "Дизайнер", "time_in": "11:15", "time_out": "13:30", "section": "Ренессанс", "ticket_type": "Взрослый"},
+  {"id": 8, "name": "Александр Новиков", "age": 48, "profession": "Менеджер", "time_in": "11:45", "time_out": "14:00", "section": "Современное искусство", "ticket_type": "Взрослый"},
+  {"id": 9, "name": "Татьяна Орлова", "age": 33, "profession": "Журналист", "time_in": "12:00", "time_out": "15:45", "section": "Древний Египет", "ticket_type": "Взрослый"},
+  {"id": 10, "name": "Михаил Соколов", "age": 22, "profession": "Студент", "time_in": "12:30", "time_out": "16:00", "section": "Средневековье", "ticket_type": "Студенческий"},
+  {"id": 11, "name": "Наталья Смирнова", "age": 39, "profession": "Бухгалтер", "time_in": "13:00", "time_out": "15:15", "section": "Ренессанс", "ticket_type": "Взрослый"},
+  {"id": 12, "name": "Виктор Кузнецов", "age": 67, "profession": "Пенсионер", "time_in": "13:15", "time_out": "15:30", "section": "Древний Египет", "ticket_type": "Льготный"},
+  {"id": 13, "name": "Галина Федорова", "age": 44, "profession": "Учитель", "time_in": "13:45", "time_out": "16:20", "section": "Современное искусство", "ticket_type": "Взрослый"},
+  {"id": 14, "name": "Андрей Павлов", "age": 29, "profession": "Инженер", "time_in": "14:00", "time_out": "17:00", "section": "Средневековье", "ticket_type": "Взрослый"},
+  {"id": 15, "name": "Светлана Романова", "age": 36, "profession": "Психолог", "time_in": "14:30", "time_out": "16:45", "section": "Ренессанс", "ticket_type": "Взрослый"}
+] 

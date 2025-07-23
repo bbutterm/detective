@@ -1,0 +1,12 @@
+[
+  {"id": 1, "name": "Владимир Антонов", "position": "Директор", "department": "Администрация", "shift": "День", "access_level": "Полный", "hire_date": "2015-03-15", "salary": 80000},
+  {"id": 2, "name": "Ирина Васильева", "position": "Куратор", "department": "Древний Египет", "shift": "День", "access_level": "Секция", "hire_date": "2018-09-01", "salary": 55000},
+  {"id": 3, "name": "Олег Максимов", "position": "Охранник", "department": "Безопасность", "shift": "День", "access_level": "Охрана", "hire_date": "2020-02-10", "salary": 35000},
+  {"id": 4, "name": "Анастасия Титова", "position": "Экскурсовод", "department": "Образовательный", "shift": "День", "access_level": "Общий", "hire_date": "2019-06-20", "salary": 30000},
+  {"id": 5, "name": "Борис Громов", "position": "Охранник", "department": "Безопасность", "shift": "Ночь", "access_level": "Охрана", "hire_date": "2017-11-05", "salary": 37000},
+  {"id": 6, "name": "Екатерина Зайцева", "position": "Реставратор", "department": "Реставрация", "shift": "День", "access_level": "Хранилище", "hire_date": "2016-01-12", "salary": 65000},
+  {"id": 7, "name": "Николай Медведев", "position": "Техник", "department": "Техническая служба", "shift": "День", "access_level": "Техническая", "hire_date": "2021-04-08", "salary": 40000},
+  {"id": 8, "name": "Алла Рыбакова", "position": "Кассир", "department": "Администрация", "shift": "День", "access_level": "Касса", "hire_date": "2019-12-03", "salary": 28000},
+  {"id": 9, "name": "Максим Попов", "position": "Хранитель", "department": "Хранилище", "shift": "День", "access_level": "Хранилище", "hire_date": "2014-07-22", "salary": 58000},
+  {"id": 10, "name": "Светлана Иванова", "position": "Уборщица", "department": "Хозяйственный", "shift": "Утро", "access_level": "Ограниченный", "hire_date": "2022-01-15", "salary": 25000}
+] 

@@ -1,0 +1,14 @@
+[
+  {"id": 1, "staff_id": 1, "area": "Администрация", "time": "08:30", "action": "Вход", "card_id": "ADMIN001"},
+  {"id": 2, "staff_id": 6, "area": "Хранилище", "time": "09:15", "action": "Вход", "card_id": "REST001"},
+  {"id": 3, "staff_id": 3, "area": "Главный зал", "time": "09:00", "action": "Обход", "card_id": "SEC001"},
+  {"id": 4, "staff_id": 2, "area": "Древний Египет", "time": "09:30", "action": "Вход", "card_id": "CUR001"},
+  {"id": 5, "staff_id": 9, "area": "Хранилище", "time": "10:00", "action": "Вход", "card_id": "KEEP001"},
+  {"id": 6, "staff_id": 6, "area": "Хранилище", "time": "11:45", "action": "Выход", "card_id": "REST001"},
+  {"id": 7, "staff_id": 4, "area": "Ренессанс", "time": "10:15", "action": "Экскурсия", "card_id": "GUIDE001"},
+  {"id": 8, "staff_id": 7, "area": "Техническая", "time": "08:45", "action": "Вход", "card_id": "TECH001"},
+  {"id": 9, "staff_id": 10, "area": "Средневековье", "time": "07:00", "action": "Уборка", "card_id": "CLEAN001"},
+  {"id": 10, "staff_id": 6, "area": "Хранилище", "time": "14:20", "action": "Вход", "card_id": "REST001"},
+  {"id": 11, "staff_id": 9, "area": "Хранилище", "time": "15:30", "action": "Выход", "card_id": "KEEP001"},
+  {"id": 12, "staff_id": 5, "area": "Ночной обход", "time": "22:00", "action": "Начало смены", "card_id": "SEC002"}
+] 

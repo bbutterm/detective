@@ -1,0 +1,17 @@
+[
+  {"id": 1, "camera_id": "CAM001", "location": "Главный вход", "time": "08:45", "event": "Движение", "quality": "Высокое"},
+  {"id": 2, "camera_id": "CAM002", "location": "Древний Египет", "time": "09:15", "event": "Посетитель", "quality": "Высокое"},
+  {"id": 3, "camera_id": "CAM003", "location": "Средневековье", "time": "09:30", "event": "Группа", "quality": "Среднее"},
+  {"id": 4, "camera_id": "CAM004", "location": "Ренессанс", "time": "10:00", "event": "Экскурсия", "quality": "Высокое"},
+  {"id": 5, "camera_id": "CAM005", "location": "Современное искусство", "time": "10:15", "event": "Одиночный", "quality": "Низкое"},
+  {"id": 6, "camera_id": "CAM006", "location": "Хранилище", "time": "10:30", "event": "Персонал", "quality": "Максимальное"},
+  {"id": 7, "camera_id": "CAM007", "location": "Служебные помещения", "time": "11:00", "event": "Техник", "quality": "Среднее"},
+  {"id": 8, "camera_id": "CAM008", "location": "Касса", "time": "11:15", "event": "Очередь", "quality": "Высокое"},
+  {"id": 9, "camera_id": "CAM002", "location": "Древний Египет", "time": "12:00", "event": "Подозрительно", "quality": "Высокое"},
+  {"id": 10, "camera_id": "CAM009", "location": "Туалеты", "time": "12:30", "event": "Обычно", "quality": "Низкое"},
+  {"id": 11, "camera_id": "CAM010", "location": "Лестница", "time": "13:00", "event": "Движение", "quality": "Среднее"},
+  {"id": 12, "camera_id": "CAM011", "location": "Запасной выход", "time": "13:15", "event": "Проверка", "quality": "Высокое"},
+  {"id": 13, "camera_id": "CAM012", "location": "Парковка", "time": "14:00", "event": "Автомобиль", "quality": "Среднее"},
+  {"id": 14, "camera_id": "CAM005", "location": "Современное искусство", "time": "16:45", "event": "Подозрительно", "quality": "Высокое"},
+  {"id": 15, "camera_id": "CAM013", "location": "Периметр", "time": "17:30", "event": "Сработка", "quality": "Низкое"}
+] 

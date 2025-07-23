@@ -1,0 +1,10 @@
+[
+  {"id": 1, "name": "Владимир Антонов", "position": "Директор", "department": "Администрация", "shift": "День", "access_level": "Полный"},
+  {"id": 2, "name": "Ирина Васильева", "position": "Куратор", "department": "Древний Египет", "shift": "День", "access_level": "Секция"},
+  {"id": 3, "name": "Олег Максимов", "position": "Охранник", "department": "Безопасность", "shift": "День", "access_level": "Охрана"},
+  {"id": 4, "name": "Анастасия Титова", "position": "Экскурсовод", "department": "Образовательный", "shift": "День", "access_level": "Общий"},
+  {"id": 5, "name": "Борис Громов", "position": "Охранник", "department": "Безопасность", "shift": "Ночь", "access_level": "Охрана"},
+  {"id": 6, "name": "Екатерина Зайцева", "position": "Реставратор", "department": "Реставрация", "shift": "День", "access_level": "Хранилище"},
+  {"id": 7, "name": "Николай Медведев", "position": "Техник", "department": "Техническая служба", "shift": "День", "access_level": "Техническая"},
+  {"id": 8, "name": "Алла Рыбакова", "position": "Кассир", "department": "Администрация", "shift": "День", "access_level": "Касса"}
+] 
