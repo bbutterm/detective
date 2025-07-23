@@ -7,6 +7,27 @@
   padding: 40px;
   background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
   font-family: 'Consolas', 'Courier New', monospace;
+  position: relative;
+}
+
+.back-to-menu-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(52, 73, 94, 0.8);
+  border: 1px solid #34495e;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.back-to-menu-button:hover {
+  background: rgba(52, 73, 94, 1);
+  border-color: #3498db;
 }
 
 .level-selector h1 {

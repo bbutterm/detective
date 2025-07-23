@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './LevelSelector.css';
 
-const LevelSelector = ({ onLevelSelect }) => {
+const LevelSelector = ({ onLevelSelect, onBack }) => {
   const [selectedChapter, setSelectedChapter] = useState(null);
 
   const chapters = [
@@ -85,6 +85,11 @@ const LevelSelector = ({ onLevelSelect }) => {
 
   return (
     <div className="level-selector">
+      {onBack && (
+        <button className="back-to-menu-button" onClick={onBack}>
+          ← Главное меню
+        </button>
+      )}
       <h1>🕵️ adHUB — SQL-квест</h1>
       <p className="main-subtitle">Изучайте SQL через детективные расследования</p>
       

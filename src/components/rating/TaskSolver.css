@@ -663,66 +663,6 @@ h2 {
   transform: translateY(-1px);
 }
 
-/* Адаптивность */
-@media (max-width: 1200px) {
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-    gap: 24px 0;
-    padding: 120px 20px 0 20px;
-  }
-  
-  .tables-section, .data-section, .notes-section {
-    min-width: 280px;
-    max-width: 95vw;
-    width: 95vw;
-    height: auto;
-    min-height: 300px;
-  }
-  
-  .data-section {
-    min-width: 280px;
-  }
-  
-  .sql-section {
-    top: 0;
-    margin-top: 40px;
-    padding: 0 20px;
-  }
-  
-  .sql-input-container {
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .sql-input {
-    min-width: 260px;
-    max-width: 90vw;
-    width: 90vw;
-  }
-  
-  .top-buttons {
-    flex-wrap: wrap;
-    padding: 0 20px;
-  }
-  
-  .modal-content {
-    min-width: 300px;
-    max-width: 90vw;
-    padding: 32px 24px;
-    margin: 20px;
-  }
-  
-  .victory-title {
-    font-size: 2.5em;
-    letter-spacing: 3px;
-  }
-  
-  .victory-text {
-    font-size: 1.4em;
-  }
-} 
-
 /* Модальные окна подсказок */
 .hints-modal {
   max-width: 500px;
@@ -849,4 +789,81 @@ h2 {
   font-weight: bold;
   color: #92400e;
   letter-spacing: 0.5px;
+}
+
+/* Стили для тегов задачи */
+.task-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tag {
+  background: #f3f4f6;
+  color: #374151;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.85em;
+  border: 1px solid #d1d5db;
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 24px 0;
+    padding: 120px 20px 0 20px;
+  }
+  
+  .tables-section, .data-section, .notes-section {
+    min-width: 280px;
+    max-width: 95vw;
+    width: 95vw;
+    height: auto;
+    min-height: 300px;
+  }
+  
+  .data-section {
+    min-width: 280px;
+  }
+  
+  .sql-section {
+    top: 0;
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+  
+  .sql-input-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .sql-input {
+    min-width: 260px;
+    max-width: 90vw;
+    width: 90vw;
+  }
+  
+  .top-buttons {
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  
+  .modal-content {
+    min-width: 300px;
+    max-width: 90vw;
+    padding: 32px 24px;
+    margin: 20px;
+  }
+  
+  .victory-title {
+    font-size: 2.5em;
+    letter-spacing: 3px;
+  }
+  
+  .victory-text {
+    font-size: 1.4em;
+  }
 } 

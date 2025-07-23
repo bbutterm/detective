@@ -1,0 +1,144 @@
+.main-menu {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a2332 0%, #2c3e50 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-container {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+.game-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  letter-spacing: 3px;
+}
+
+.game-subtitle {
+  font-size: 1.2rem;
+  color: #bdc3c7;
+  margin: 0 0 50px 0;
+  font-weight: 300;
+}
+
+.menu-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.menu-card {
+  background: rgba(52, 73, 94, 0.9);
+  border: 2px solid #34495e;
+  border-radius: 8px;
+  padding: 30px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-card:hover {
+  background: rgba(52, 73, 94, 1);
+  border-color: #3498db;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
+}
+
+.menu-card.auth-card:hover {
+  border-color: #e74c3c;
+  box-shadow: 0 8px 25px rgba(231, 76, 60, 0.3);
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.menu-card h3 {
+  font-size: 1.4rem;
+  color: #ecf0f1;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+.menu-card p {
+  color: #bdc3c7;
+  margin: 0 0 15px 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  flex-grow: 1;
+}
+
+.card-footer {
+  color: #7f8c8d;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-top: 1px solid #4a5568;
+  padding-top: 15px;
+  margin-top: auto;
+}
+
+.menu-stats {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid #4a5568;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3498db;
+  line-height: 1;
+}
+
+.stat-label {
+  display: block;
+  color: #95a5a6;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  font-weight: 400;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .game-title {
+    font-size: 2.5rem;
+  }
+  
+  .menu-options {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .menu-stats {
+    gap: 40px;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+} 

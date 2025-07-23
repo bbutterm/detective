@@ -1,0 +1,40 @@
+{
+  "id": "rt_002",
+  "title": "Топ-менеджеры",
+  "description": "Найдите всех сотрудников из IT отдела с зарплатой выше 100000 рублей. Покажите их имена, отдел и зарплату.",
+  "difficulty": 2,
+  "tags": ["SELECT", "WHERE", "AND"],
+  "tables": {
+    "employees": [
+      {"id": 1, "name": "Иванов Алексей", "department": "IT", "salary": 120000, "hire_date": "2020-03-15"},
+      {"id": 2, "name": "Петрова Мария", "department": "HR", "salary": 85000, "hire_date": "2019-07-22"},
+      {"id": 3, "name": "Сидоров Петр", "department": "IT", "salary": 95000, "hire_date": "2021-01-10"},
+      {"id": 4, "name": "Козлова Анна", "department": "Finance", "salary": 110000, "hire_date": "2018-09-05"},
+      {"id": 5, "name": "Морозов Дмитрий", "department": "IT", "salary": 130000, "hire_date": "2017-11-30"},
+      {"id": 6, "name": "Федорова Елена", "department": "Marketing", "salary": 75000, "hire_date": "2022-02-14"},
+      {"id": 7, "name": "Волков Сергей", "department": "IT", "salary": 115000, "hire_date": "2020-08-18"},
+      {"id": 8, "name": "Лебедева Ольга", "department": "HR", "salary": 70000, "hire_date": "2021-06-25"},
+      {"id": 9, "name": "Орлов Игорь", "department": "Finance", "salary": 105000, "hire_date": "2019-12-03"},
+      {"id": 10, "name": "Соколова Виктория", "department": "Marketing", "salary": 80000, "hire_date": "2020-04-12"},
+      {"id": 11, "name": "Николаев Андрей", "department": "IT", "salary": 102000, "hire_date": "2021-03-08"},
+      {"id": 12, "name": "Васильева Татьяна", "department": "IT", "salary": 98000, "hire_date": "2022-01-20"}
+    ]
+  },
+  "solution": "SELECT name, department, salary FROM employees WHERE department = 'IT' AND salary > 100000;",
+  "expected_result": [
+    {"name": "Иванов Алексей", "department": "IT", "salary": 120000},
+    {"name": "Морозов Дмитрий", "department": "IT", "salary": 130000},
+    {"name": "Волков Сергей", "department": "IT", "salary": 115000},
+    {"name": "Николаев Андрей", "department": "IT", "salary": 102000}
+  ],
+  "hints": [
+    "Нужно использовать WHERE с двумя условиями",
+    "Логический оператор AND объединяет условия",
+    "Не забудьте кавычки для текстовых значений"
+  ],
+  "creator": "sql_master",
+  "created_at": "2024-01-18",
+  "likes": 23,
+  "dislikes": 1,
+  "solved_count": 31
+} 
