@@ -529,7 +529,6 @@ const GameModule = ({ config, onBack, onNextLevel, levelId }) => {
       </div>
       
       <div className="sql-section">
-        <h2>SQL QUERY</h2>
         <div className="sql-input-container">
           <div className="sql-input-wrapper">
             <textarea

@@ -90,7 +90,7 @@ const LevelSelector = ({ onLevelSelect, onBack }) => {
           ← Главное меню
         </button>
       )}
-      <h1>🕵️ adHUB — SQL-квест</h1>
+      <h1>🕵️ DataDetective — SQL-квест</h1>
       <p className="main-subtitle">Изучайте SQL через детективные расследования</p>
       
       <div className="chapters-grid">
