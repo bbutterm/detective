@@ -39,6 +39,7 @@ body, html, #root {
   min-height: 100vh;
   padding: 148px 0 0 0;
   box-sizing: border-box;
+  overflow: visible;
 }
 
 /* Верхние кнопки */
@@ -88,6 +89,7 @@ body, html, #root {
 .tables-section {
   grid-column: 1;
   grid-row: 1;
+  overflow: visible;
   /* Динамическая высота */
   height: auto;
   min-height: 200px;
@@ -122,6 +124,8 @@ body, html, #root {
   width: 100%;
   display: flex;
   justify-content: center;
+  overflow: visible;
+  z-index: 1;
 }
 
 .table-btn {
@@ -456,19 +460,43 @@ h2 {
 
 .tooltip {
   position: absolute;
-  left: 110%;
+  left: calc(100% + 15px);
   top: 50%;
   transform: translateY(-50%);
   background: #fff;
-  border: 2px solid #222;
-  border-radius: 10px;
-  padding: 8px 16px;
+  border: 2.5px solid #222;
+  border-radius: 16px;
+  padding: 0;
   font-size: 1em;
   color: #222;
   white-space: nowrap;
-  z-index: 10;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-  animation: fadeIn 0.2s ease-out;
+  z-index: 1000;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  animation: tooltipSlideIn 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.tooltip::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -12px;
+  transform: translateY(-50%);
+  border: 8px solid transparent;
+  border-right-color: #222;
+  z-index: 999;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -9px;
+  transform: translateY(-50%);
+  border: 6px solid transparent;
+  border-right-color: #fff;
+  z-index: 1001;
 }
 
 .clear-btn {
@@ -857,42 +885,57 @@ h2 {
 }
 
 .table-structure {
-  position: absolute;
-  top: -10px;
-  right: 110%;
-  background: #fff;
-  border: 2px solid #222;
+  background: linear-gradient(135deg, #fff 0%, #f8fafc 100%);
+  border: none;
   border-radius: 12px;
-  padding: 16px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  padding: 18px;
+  box-shadow: none;
   z-index: 1000;
-  min-width: 200px;
-  max-width: 300px;
-  animation: tooltipFadeIn 0.3s ease;
+  min-width: 240px;
+  max-width: 320px;
+  white-space: normal;
+  position: relative;
 }
 
 .structure-title {
-  font-weight: 600;
-  font-size: 14px;
-  color: #222;
-  margin-bottom: 8px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #eee;
+  font-weight: 700;
+  font-size: 15px;
+  color: #1a202c;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.structure-title::before {
+  content: '📊';
+  font-size: 16px;
 }
 
 .columns-list {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
 }
 
 .column-item {
-  font-size: 12px;
-  color: #555;
-  padding: 4px 0;
+  font-size: 13px;
+  color: #4a5568;
+  padding: 8px 12px;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 10px;
+  background: rgba(74, 85, 104, 0.05);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.column-item:hover {
+  background: rgba(74, 85, 104, 0.1);
+  transform: translateX(2px);
 }
 
 .table-structure::before {
@@ -913,7 +956,7 @@ h2 {
   border-left-color: #fff;
 }
 
-@keyframes tooltipFadeIn {
+@keyframes tooltipSlideIn {
   from {
     opacity: 0;
     transform: translateX(10px);
@@ -921,5 +964,16 @@ h2 {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+} 
+
+@keyframes tooltipFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50%) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
   }
 } 

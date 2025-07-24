@@ -141,4 +141,105 @@
   .stat-number {
     font-size: 2rem;
   }
+}
+
+/* Красивые tooltip для предупреждений */
+.rating-card, .auth-card {
+  position: relative;
+  overflow: visible;
+}
+
+.warning-tooltip {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  animation: tooltipSlideIn 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.tooltip-content {
+  background: linear-gradient(135deg, #ff4757 0%, #ff3742 100%);
+  color: white;
+  padding: 16px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(255, 71, 87, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 280px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.tooltip-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.tooltip-text {
+  text-align: left;
+}
+
+.tooltip-text strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.tooltip-text p {
+  margin: 0;
+  font-size: 12px;
+  opacity: 0.9;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.tooltip-arrow {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 12px solid #ff4757;
+}
+
+.tooltip-arrow::before {
+  content: '';
+  position: absolute;
+  top: -13px;
+  left: -9px;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 11px solid rgba(255, 255, 255, 0.1);
+}
+
+@keyframes tooltipSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-10px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0) scale(1);
+  }
+}
+
+/* Дополнительные эффекты для карточек с предупреждениями */
+.rating-card:hover .warning-tooltip,
+.auth-card:hover .warning-tooltip {
+  animation: tooltipPulse 2s infinite;
+}
+
+@keyframes tooltipPulse {
+  0%, 100% {
+    box-shadow: 0 8px 32px rgba(255, 71, 87, 0.4);
+  }
+  50% {
+    box-shadow: 0 8px 32px rgba(255, 71, 87, 0.6);
+  }
 } 

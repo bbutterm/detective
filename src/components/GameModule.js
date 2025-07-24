@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import alasql from 'alasql';
 import './GameModule.css';
+import TableTooltipPortal from './TableTooltipPortal';
 
 const GameModule = ({ config, onBack, onNextLevel, levelId }) => {
   const { title, description, task, briefing, tables, victoryConditions, bonusConditions, image } = config;
@@ -35,6 +36,8 @@ const GameModule = ({ config, onBack, onNextLevel, levelId }) => {
   const [sql, setSql] = useState('');
   const [error, setError] = useState('');
   const [hoveredTable, setHoveredTable] = useState(null);
+  const [hoveredTableRect, setHoveredTableRect] = useState(null);
+  const [hoveredTableData, setHoveredTableData] = useState(null);
   const [history, setHistory] = useState([]);
   const dataOutputRef = useRef(null);
   const sqlInputRef = useRef(null);
@@ -469,18 +472,31 @@ const GameModule = ({ config, onBack, onNextLevel, levelId }) => {
               <button
                 className={`table-btn${selectedTable?.name === table.name ? ' selected' : ''}`}
                 onClick={() => setSelectedTable(table)}
-                onMouseEnter={() => setHoveredTable(table.name)}
-                onMouseLeave={() => setHoveredTable(null)}
+                onMouseEnter={e => {
+                  setHoveredTable(table.name);
+                  setHoveredTableData(table);
+                  setHoveredTableRect(e.currentTarget.getBoundingClientRect());
+                }}
+                onMouseLeave={() => {
+                  setHoveredTable(null);
+                  setHoveredTableData(null);
+                  setHoveredTableRect(null);
+                }}
               >
                 {table.name}
               </button>
-              {hoveredTable === table.name && (
-                <div className="tooltip">
-                  {getTableColumns(table)}
-                </div>
-              )}
             </div>
           ))}
+          <TableTooltipPortal
+            visible={!!hoveredTable}
+            rect={hoveredTableRect}
+            table={hoveredTableData}
+            onClose={() => {
+              setHoveredTable(null);
+              setHoveredTableData(null);
+              setHoveredTableRect(null);
+            }}
+          />
         </div>
       </div>
       
