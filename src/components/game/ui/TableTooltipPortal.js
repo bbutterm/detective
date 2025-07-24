@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import ReactDOM from 'react-dom';
-import './GameModule.css';
+import '../../GameModule.css';
 
 const TableTooltipPortal = ({ visible, rect, table, onClose }) => {
   const tooltipRef = useRef();
