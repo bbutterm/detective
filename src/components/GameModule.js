@@ -287,8 +287,29 @@ const GameModule = ({ config, onBack, onNextLevel, levelId }) => {
   };
 
   const getTableColumns = (table) => {
-    if (!table.data || table.data.length === 0) return '';
-    return Object.keys(table.data[0]).join(', ');
+    if (!table.data || !Array.isArray(table.data) || table.data.length === 0) {
+      return (
+        <div className="table-structure">
+          <div className="structure-title">Нет данных</div>
+        </div>
+      );
+    }
+    
+    const firstRow = table.data[0];
+    const columns = Object.keys(firstRow);
+    
+    return (
+      <div className="table-structure">
+        <div className="structure-title">Структура таблицы {table.name}:</div>
+        <div className="columns-list">
+          {columns.map((column, index) => (
+            <div key={index} className="column-item">
+              📋 {column}
+            </div>
+          ))}
+        </div>
+      </div>
+    );
   };
 
   const handleContinue = () => {
